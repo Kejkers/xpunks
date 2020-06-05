@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="ru" dir="ltr">
+    <html lang="ru" dir="ltr" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8">
         <title>mainscrin</title>
@@ -7,14 +7,24 @@
         <script src="js/mainscreen.js"></script>
     </head>
     <body>
-        <div class="leftpanel_block">
-            <div class="leftpanel_block_userspace">
-                <div class="leftpanel_block_userspace_profileImg" id="leftpanel_block_userspace_profileImg"><input class="leftpanel_block_userspace_profileImg_down" id="leftpanel_block_userspace_profileImg_down" type="file" accept="image/*" onchange="killme(this)"></input></div>
-                <div class="leftpanel_block_userspace_toLogin"><a class="leftpanel_block_userspace_toLogin_link" href="loginscreen.html"><img class="leftpanel_block_userspace_toLogin_img" src="img/exit.png"></img></a></div>
+        <div>
+            <div class="leftpanel_block">
+                <div class="leftpanel_block_profileImg"><input type="file" class="userImg"  accept="image/*" onchange="killme(this)"></input></div>
+                <div class="leftpanel_block_exit"><a class="exitLink" href="loginscreen.html"><img class="exitImg" src="img/exit.png"></img></a></div>
             </div>
-
-
-
+            <div class="friendbar">
+                <div class="q1">Ваши друзья:</div>
+    
+                
+                <span class="friendList" th:each="el: ${friends}">
+                    <div><img th:src="${el.img}"><a th:href="${el.link}" th:text="${el.name}"></a></div>
+                </span>
+                <div class="q2"><a>Добавить друга</a></div>
+            </div>
         </div>
+        
+
+
+
     </body>
 </html>
