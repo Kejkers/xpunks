@@ -4,7 +4,7 @@ body{
     background-color: #30336b;
     font-family: sans-serif;
     font-size: 18px;
-    color: #f5f6fa;
+    color: white;
 }
 
 
@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #22a6b3;
+    background-color: #eb4d4b;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,7 @@ header nav a{
     margin: auto 10px;
     padding: 4px;
     text-decoration: none;
-    color: #f5f6fa;
+    color: white;
     border-radius: 8px;
     transition: 0.5s;
     font-size: 20px;
@@ -50,7 +50,7 @@ header nav a:hover{
     width: 100vw;
     max-width: 800px;
     margin: 20px auto;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     overflow: auto;
     display: flex;
