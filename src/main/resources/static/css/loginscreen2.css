@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #686de0;
+    background: #303952;
 }
 
 .container{
@@ -14,7 +14,7 @@ body{
     padding: 40px;
     border-radius: 5px;
     transform: translate(-50%, -50%);
-    background:#30336b;
+    background: rgba(0, 0, 0, 0.2);
     text-align: center;
     
 }
@@ -103,7 +103,7 @@ input:focus::-webkit-input-placeholder{
     padding: 40px;
     border-radius: 5px;
     transform: translate(-50%, -50%);
-    background:#30336b;
+    background: rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
