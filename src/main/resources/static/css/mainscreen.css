@@ -1,7 +1,7 @@
 body{
     margin: 0;
     border: 0;
-    background-color: #192a56;
+    background-color: #30336b;
     font-family: sans-serif;
     font-size: 18px;
     color: #f5f6fa;
@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #e84118;
+    background-color: #eb4d4b;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,7 +50,7 @@ header nav a:hover{
     width: 100vw;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #273c75;
+    background-color: none;
     border-radius: 4px;
     overflow: auto;
     display: flex;
@@ -66,13 +66,13 @@ header nav a:hover{
     display: flex;
     flex-direction: row;
     border-radius: 4px;
-    border: 2px solid #44bd32;
+    border: 2px solid #6ab04c;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .container .friend:hover{
-    background-color: #44bd32;
+    background-color: #6ab04c;
 }
 
 .container .friend .img{
@@ -90,5 +90,5 @@ header nav a:hover{
 .container .friend .info h1{
     font-size: 25px;
     margin: 0px;
-    color: #e1b12c;
+    color: #f9ca24;
 }
