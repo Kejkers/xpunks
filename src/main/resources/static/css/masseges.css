@@ -7,9 +7,6 @@ body{
     color: white;
 }
 
-
-
-
 header{
     position: relative;
     width: 100vw;
@@ -36,14 +33,18 @@ header nav a{
     padding: 4px;
     text-decoration: none;
     color: white;
-    border-radius: 8px;
+ 
     transition: 0.5s;
     font-size: 20px;
     font-weight: bolder;
 }
+header .mark{
+    border-bottom: 2px solid #6ab04c;
+}
 
 header nav a:hover{
     background-color: #6ab04c;
+    border-radius: 8px;
 }
 .container{
     position: relative;
@@ -54,9 +55,12 @@ header nav a:hover{
     border-radius: 4px;
     overflow: auto;
     display: flex;
-    flex-direction: column;
-    
-  
+    flex-direction: column;  
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
 }
 .container .friend{
     margin: 10px;
