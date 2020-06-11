@@ -54,11 +54,14 @@ header nav a:hover{
     border-radius: 8px;
 }
 
-.page .create{
-    margin: 0;
+form{
+    text-align: center;
+}
+
+form .create{
     font-size: larger;
     padding: 10px 15px;
-    margin: 10px;
+    margin: 10px auto;
     margin-top: 20px;
     border: 2px solid #f0932b;
     border-radius: 5px;
@@ -66,14 +69,16 @@ header nav a:hover{
     cursor: pointer;
     color: white;
     text-decoration: none;
+    background-color: #f0932b;
 }
 
-.page .create:hover{
-    background-color: #f0932b;
+form .create:hover{
+    background-color: #6ab04c;
+    border-color: #6ab04c;
     transform: scale(1.1);
 }
 
-.container{
+.container1{
     position: relative;
     width: 100vw;
     max-width: 800px;
@@ -82,44 +87,69 @@ header nav a:hover{
     border-radius: 4px;
     overflow: auto;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    transition: 1s;  
 }
 
-.container a{
-    text-decoration: none;
-    color: white;
-}
-.container .friend{
+.container1 .friend{
     margin: 10px;
     padding: 10px;
     width: auto;
     background-color: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 4px;
     border: 2px solid #6ab04c;
     transition: 0.5s;
-    cursor: pointer;
 }
 
-.container .friend:hover{
+
+.container1 .friend:hover{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.container .friend .img{
+.container1 .friend .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.container1 .friend .img{
     width: 60px;
     height: 60px;
     border-radius: 5px;
     background-color: black;
 }
-
-.container .friend .info{
-    height: 60px;
-    margin-left: 10px;
-}
-
-.container .friend .info h1{
+.container1 .friend h1{
     font-size: 25px;
     margin: 0px;
+    margin-left: 10px;
     color: #f0932b;
+    font-size: 32px;
+}
+
+
+.container1 .friend label .add{
+    position: absolute;
+    top: -1000000px;
+}
+.container1 .friend .addimg{
+    width: 54px;
+    height: 54px;
+    margin-right: 10px;
+    background-image: url("addimg.png");
+    background-repeat: round;
+    transition: 0.4s;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.container1 .friend .add:checked+ .addimg{
+    background-image:url("addimgchecked.png");
+}
+.container1 .friend .addimg:hover{
+    transform: scale(1);
 }
